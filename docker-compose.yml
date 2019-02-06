@@ -10,6 +10,11 @@
      - '80:80'
      - '22:22'
    volumes:
-     - '/srv/gitlab/config:/etc/gitlab'
-     - '/srv/gitlab/logs:/var/log/gitlab'
-     - '/srv/gitlab/data:/var/opt/gitlab'
+     - gitlab-config:/etc/gitlab
+     - gitlab-logs:/var/log/gitlab
+     - gitlab-data:/var/opt/gitlab
+
+volumes:
+  gitlab-config:
+  gitlab-logs:
+  gitlab-data:
