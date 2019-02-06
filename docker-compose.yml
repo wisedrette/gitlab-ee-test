@@ -1,7 +1,6 @@
  web:
    image: 'gitlab/gitlab-ce:latest'
    restart: always
-   hostname: 'master-n7rvm.deployster.io'
    environment:
      GITLAB_OMNIBUS_CONFIG: |
        external_url 'https://master-n7rvm.deployster.io'
